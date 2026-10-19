@@ -1,0 +1,16 @@
+:root {
+  --nav-x: 30px;
+  --sk-red: #f50804;
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: url('@/assets/fonts/sf-mono/SFMonoRegular.otf');
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'SF Mono';
+}

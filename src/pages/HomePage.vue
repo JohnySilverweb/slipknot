@@ -3,7 +3,10 @@
     <div class="overlay"></div>
     <video src="/public/video/wait_and_bleed.mp4?url" autoplay loop muted></video>
     <img src="@/assets/img/slipknot-logo.png" alt="slipknot logo" class="logo" />
-    <!-- <p>This is a fan-made project. No copyright infringement intended.</p> -->
+    <p class="copyright">
+      <span>This is a fan-made project.</span>
+      <span> No copyright infringement intended.</span>
+    </p>
   </div>
 </template>
 
@@ -20,8 +23,7 @@ export default {}
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
-    /* background-color: rgba(0, 0, 0, 1); */
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 99;
   }
   video {
@@ -41,11 +43,20 @@ export default {}
     transform: translate(50%, 50%);
     pointer-events: none;
   }
-  /*  p {
-    position: relative;
+  .copyright {
+    position: absolute;
+    right: 0;
+    bottom: 0;
     z-index: 99;
     color: white;
-    pointer-events: none;
-  } */
+    cursor: default;
+    margin-right: 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    span:hover {
+      font-family: 'SF Mono';
+      font-weight: 700;
+    }
+  }
 }
 </style>

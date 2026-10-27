@@ -23,7 +23,7 @@ export default {
   background-color: black;
   grid-template-columns: repeat(4, 1fr);
   .gif {
-    filter: grayscale(1) brightness(0.8);
+    filter: grayscale(1) brightness(0.6);
     width: 100%;
     height: 353px;
     pointer-events: none;

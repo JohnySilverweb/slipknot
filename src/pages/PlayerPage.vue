@@ -3,15 +3,22 @@
     <div class="player-container">
       <music-player></music-player>
     </div>
-    <song-list></song-list>
+    <song-list :active-id="currentId" @select="currentId = $event"></song-list>
   </div>
 </template>
 
 <script>
 import SongList from '@/Navbar/SongList.vue'
 import MusicPlayer from './MusicPlayer.vue'
+
 export default {
+  name: 'PlayerPage',
   components: { SongList, MusicPlayer },
+  data() {
+    return {
+      currentId: null,
+    }
+  },
 }
 </script>
 

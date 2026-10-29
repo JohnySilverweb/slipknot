@@ -3,7 +3,9 @@
     <div class="controls">
       <div class="control-buttons">
         <button id="prev"><span>⏮</span></button>
-        <button id="play"><span>▶</span></button>
+        <button @click="toggle">
+          <span>{{ playing ? '⏸' : '▶' }}</span>
+        </button>
         <button id="next"><span>⏭</span></button>
       </div>
       <input type="range" class="vol" min="0" max="1" step="0.01" value="1" />

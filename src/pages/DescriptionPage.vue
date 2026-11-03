@@ -10,7 +10,7 @@
     </div>
     <div class="block-r">
       <video src="/video/glitch.mp4" autoplay muted loop></video>
-      <img src="@/assets/img/slipknot-1999.jpg" alt="" class="img-first" />
+      <img src="@/assets/img/slipknot-1999.webp" alt="" class="img-first" />
     </div>
   </div>
 
@@ -58,7 +58,7 @@
 </template>
 
 <script setup>
-import members from '@/components/members'
+import members from '@/lists/members'
 
 function getBackground(member) {
   return {
@@ -254,7 +254,7 @@ body {
   position: relative;
   .img,
   video {
-    background-image: url('@/assets/img/ros_robinson.jpg');
+    background-image: url('@/assets/img/ros_robinson.webp');
     background-position: center;
     background-size: cover;
     position: fixed;

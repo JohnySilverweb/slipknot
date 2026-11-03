@@ -1,22 +1,22 @@
 <template>
   <div class="cover">
+    <video src="/video/scissors.mp4" autoplay muted loop></video>
     <div class="player-container">
-      <music-player></music-player>
+      <music-player :song-id="currentId" @change="currentId = $event"></music-player>
     </div>
     <song-list :active-id="currentId" @select="currentId = $event"></song-list>
   </div>
 </template>
 
 <script>
-import SongList from '@/Navbar/SongList.vue'
-import MusicPlayer from './MusicPlayer.vue'
+import SongList from '@/components/SongList.vue'
+import MusicPlayer from '../components/MusicPlayer.vue'
 
 export default {
-  name: 'PlayerPage',
   components: { SongList, MusicPlayer },
   data() {
     return {
-      currentId: null,
+      currentId: 1,
     }
   },
 }
@@ -24,17 +24,18 @@ export default {
 
 <style lang="scss" scoped>
 .cover {
-  background-image: url('@/assets/img/cover.jpg');
   width: 100vw;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   background-color: black;
+  video {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+  }
 }
 .player-container {
   width: 100vw;
-  height: 10%;
+  height: 70px;
   position: fixed;
   bottom: 0;
   z-index: 2;
@@ -42,5 +43,6 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #07081a;
 }
 </style>

@@ -60,6 +60,6 @@ export default [
     number: 'Number 8',
     name: 'Corey Taylor',
     position: 'Lead vocals',
-    image: '/img/members/8.jpg',
+    image: '/img/members/8.webp',
   },
 ]

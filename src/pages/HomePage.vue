@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="overlay"></div>
-    <video src="/public/video/wait_and_bleed.mp4?url" autoplay loop muted></video>
-    <img src="@/assets/img/slipknot-logo.png" alt="slipknot logo" class="logo" />
+    <video src="/video/wait_and_bleed.mp4?url" autoplay loop muted></video>
+    <img src="@/assets/img/slipknot-logo.webp" alt="slipknot logo" class="logo" />
     <p class="copyright">
       <span>This is a fan-made project.</span>
       <span> No copyright infringement intended.</span>

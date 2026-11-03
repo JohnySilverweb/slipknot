@@ -42,3 +42,5 @@ npm run build
 ```sh
 npm run lint
 ```
+See this page online on this link:
+https://maks-slipknot.vercel.app/
